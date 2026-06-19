@@ -82,17 +82,6 @@ uv run evaluate-pipeline \
   --meshes input/meshes/
 ```
 
-## Configuration
-
-All tunable parameters live in `sim_config.yaml`. The most commonly adjusted:
-
-| Key | Default | Description |
-|-----|---------|-------------|
-| `meshes_dir` | `input/meshes` | CAD mesh directory |
-| `output_dir` | `input/images` | Simulation output directory |
-| `render_samples` | `64` | Blender Cycles samples (speed vs. quality) |
-| `conveyor_speed_ms` | `0.15` | Belt speed in m/s |
-
 ## Author
 
 Developed by Aditya Sai Srinivas
