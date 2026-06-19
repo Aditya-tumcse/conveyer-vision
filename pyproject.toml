@@ -29,4 +29,5 @@ packages = ["pipeline"]
 dev = [
     "pytest>=8.0",
     "ruff>=0.4",
+    "pre-commit>=3.7",
 ]
