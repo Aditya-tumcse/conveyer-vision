@@ -1,0 +1,19 @@
+# dependencies / build
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+
+# data — too large for git; see README for setup
+input/images/
+input/meshes/
+
+# generated outputs
+artifacts/
+
+# uv lockfile
+uv.lock
+
+# os
+.DS_Store

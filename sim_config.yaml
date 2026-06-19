@@ -1,0 +1,25 @@
+# Paths
+meshes_dir: .input/meshes
+output_dir: .input/images
+
+# Conveyor
+conveyor_speed_ms: 0.15        # meters per second
+object_spacing_m: 0.5          # center-to-center gap on belt
+
+# Cameras — opposite-side stereo over mid-belt
+camera_height_m: 0.65           # above belt surface
+camera_lateral_offset_m: 0.65   # Y separation (one cam each side of belt)
+camera_x_offset_m: 0.50         # X position (just past mid-belt toward exit)
+camera_look_at_x_m: -0.30       # both cams aim at this point on belt (mid-belt)
+camera_tilt_deg: 15.0           # (legacy; unused with look-at aiming)
+
+# Depth noise
+depth_noise_sigma_base: 0.001  # meters (sigma at 0m)
+depth_noise_sigma_scale: 0.002 # meters (sigma increment per (d/1m)^2)
+flying_pixel_threshold_m: 0.02
+ir_speckle_alpha: 0.04
+
+# Render
+render_resolution: [640, 480]
+fps: 30
+render_samples: 64             # Cycles samples (lower = faster, higher = more realistic)
